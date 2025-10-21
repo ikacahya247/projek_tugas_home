@@ -15,12 +15,24 @@ class _PenghitungScreenState extends State<PenghitungScreen> {
     setState(() {
       nilai++;
     });
-    print("Nilai sekarang: $nilai");
   }
 
   void pindahHalaman() {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => const ProfilScreen()),
+      MaterialPageRoute(
+        builder: (context) => const ProfilScreen(
+          nama: "Ika Cahya Oktavia",
+          alamat: "Arabasta",
+          hobi: "Membaca",
+          tanggalLahir: "10 Mei 2004",
+          jenisKelamin: "Perempuan",
+          email: "ika.cahya@example.com",
+          noTelepon: "081234567890",
+          status: "Mahasiswa",
+          jurusan: "Teknik Informatika",
+          universitas: "Universitas Duta Bangsa Surakarta",
+        ),
+      ),
     );
   }
 
